@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class  Rectangle{
+    Scanner s=new Scanner(System.in);
+    int l,w,A,p;
+    void setdata() {
+
+        System.out.println("Enter length of rectangle");
+        l = s.nextInt();
+        System.out.println("Enter width of rectangle");
+        w=s.nextInt();
+    }
+    int Perimeter(int a,int b){
+        p=(a+b)*2;
+        System.out.println("Perimeter ="+p);
+        return p;
+    }
+    int Area(int a,int b)
+    {
+        A=a*b;
+        System.out.println("Area ="+A);
+        return A;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int l,w,A,p;
+
+        Scanner s=new Scanner(System.in);
+        Rectangle r1 = new Rectangle();
+        Rectangle r2 = new Rectangle();
+        Rectangle r3 = new Rectangle();
+        l = s.nextInt();
+        w=s.nextInt();
+        r1.setdata();
+        int x=r1.Perimeter(r1.l, r1.w);
+        int y=r1.Area(r1.l, r1.w);
+        r2.setdata();
+        int x1=r2.Perimeter(r2.l,r2.w);
+        int y1=r2.Area(r2.l,r2.w);
+        r3.setdata();
+        int x2=r3.Perimeter(r3.l, r3.w);
+        int y2=r3.Area(r3.l, r3.w);
+    }
+}
