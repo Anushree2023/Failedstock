@@ -3,21 +3,32 @@ import java.io.*;
 
 public class Solution {
 	Scanner s=Scanner (System.in);
+	void Create()
+	{
+System.out.println("Enter the size of array");
+		n=s.nextInt();
+		
+		for(int i=0;i<n;i++)
+{
+	arr[i]=s.nextInt();
+}
+	}
 
 	
-	public  int maxSubarraySum(int[] arr,int n) {
-	
-
-for(int i=0;i<n;i++)
+	public  int maxSubarraySum() {
+		for(int i=0;i<n;i++)
 {
 	sum+=arr[i];
 }
 return sum;
+System.out.println(sum);
 }
 
 
 }
 class Main{
+	public static void main(String args[])
 	Solution a1=new Solution();
-	a1.maxSubarraySum()
+	a1.Create();
+	a1.maxSubarraySum();
 }
