@@ -28,7 +28,8 @@ System.out.println(sum);
 }
 class Main{
 	public static void main(String args[])
-	Solution a1=new Solution();
+	{Solution a1=new Solution();
 	a1.Create();
 	a1.maxSubarraySum();
+}
 }
