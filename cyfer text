@@ -1,0 +1,19 @@
+import java.util.*;
+
+class Main{
+
+    public static void main(String args [])
+    {
+        int key;
+        String letter;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the letter ");
+        letter=sc.nextLine();
+        System.out.println("Enter the key ");
+        key=sc.nextInt();
+        int i=Integer.parseInt(letter);
+        int temp=i+key;
+        String ans=Integer.toString(temp);
+        System.out.println("Converted string="+ans);
+    }
+}
