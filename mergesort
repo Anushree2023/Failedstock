@@ -1,0 +1,38 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+ int l;
+ int h;
+ int mid;
+ vector <int> m;
+void merge(int l,int mid,int h)
+{
+    int i=l;
+    int j=mid+1;
+    int k=0;
+    vector<int>x;
+while(i!= (m.size()-1) )
+{
+    
+}
+
+}
+void mergesort(int l,int h)
+{
+    mid=l+h/2;
+    while(l<h)
+    {
+        mergesort(l,mid);
+        mergesort(mid+1,h);
+        merge(l,mid,h);
+
+    }
+
+}
+int main()
+{
+   
+vector <int> m;
+
+    return 0;
+}
